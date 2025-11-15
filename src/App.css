@@ -128,12 +128,18 @@ body::before {
   border: 1px solid var(--glass-border);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .search-box:focus-within {
   border-color: var(--secondary-color);
   box-shadow: 0 8px 32px rgba(74, 144, 226, 0.3);
   transform: translateY(-2px);
+}
+
+.search-icon-left {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
 }
 
 .search-input {
@@ -161,6 +167,8 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.2rem;
+  color: white;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
 }
@@ -173,12 +181,6 @@ body::before {
 .search-button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-}
-
-.search-button img {
-  width: 20px;
-  height: 20px;
-  filter: brightness(0) invert(1);
 }
 
 /* Filter Buttons */
